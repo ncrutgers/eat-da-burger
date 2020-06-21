@@ -1,0 +1,31 @@
+/* Adds background image to body */
+body {
+    background-image: url("../images/fastfood.jpg");
+    background-size: 30%;
+  }
+/* Adds styling to burger image */
+img {
+  margin-top: 10px;
+  border: solid 1px black;
+}
+/* Adds styling to all buttons */
+button:hover { 
+  background-color: #ebe7e7;
+  border: solid 2px rgb(24, 23, 23);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/* Resize text input */
+#new-burger {
+  width: 140px;
+}
+/* Adds styling to headings */
+h4, h5 {
+  font-family: 'Codystar', "Comic Sans MS", cursive, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: gold;
+  background: rgb(39, 2, 2);
+  text-align: center;
+  border: solid 1px grey;
+  padding: 5px;
+}
