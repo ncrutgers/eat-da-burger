@@ -1,3 +1,45 @@
-// Setup the `index.handlebars` to have the template that Handlebars can render onto.
-
-// Create a button in `index.handlebars` that will submit the user input into the database.
+<div class="container mt-5 p-5">
+  <div class="card-group">
+    <div class="col-sm-6 col-md-6 col-lg-6 card border-0 bg-light">
+      <div class="card-body">
+        <h4 class="card-title">Burgers Not Devoured</h4>
+        <ul class="list-group list-group-vertical-xl">
+            {{!-- Loops through each burger array; if not devoured sends to burger-block for rendering & changes devoured state to true to be used when button is clicked - list & adds devour button --}}
+            {{#each burgers}}
+              {{#unless devoured}}
+                {{> burgers/burger-block devour=1}}
+              {{/unless}}
+            {{/each}}
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6 card border-0 bg-light">
+      <img class="card-img-top" src="../assets/images/burger.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title mt-3">Add Burger</h5>
+        <form class="insert-form pb-5">
+          <div class="form-group">
+            <label for="new-burger">Burger Name:</label>
+            <input type="text" id="new-burger">
+          </div>
+          <button type="submit">Add Burger</button>
+        </form>      
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6 card border-0 bg-light">
+      <div class="card-body">
+        <h4 class="card-title">Burgers Devoured</h4>
+        <ul class="list-group list-group-vertical-xl">
+          {{!-- Loops through burgers array; if devoured, list items; when button clicked devoured is true "1" --}}
+          {{#each burgers}}
+            {{#if devoured}}
+            <li class="list-group-item">
+              <p>{{id}}. {{burger_name}}</p>
+            </li>
+            {{/if}}
+          {{/each}}
+        </ul> 
+      </div>
+    </div>
+  </div>
+</div>
