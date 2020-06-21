@@ -19,7 +19,20 @@ button:hover {
   width: 140px;
 }
 /* Adds styling to headings */
-h4, h5 {
+h4 {
+  font-family: 'Codystar', "Comic Sans MS", cursive, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: gold;
+  background: rgb(39, 2, 2);
+  text-align: center;
+  border: solid 1px grey;
+  padding: 5px;  
+  margin-top: 20px;
+  
+}
+
+h5 {
   font-family: 'Codystar', "Comic Sans MS", cursive, sans-serif;
   font-size: 22px;
   font-weight: bold;
@@ -28,4 +41,5 @@ h4, h5 {
   text-align: center;
   border: solid 1px grey;
   padding: 5px;
+
 }
