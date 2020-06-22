@@ -33,6 +33,6 @@ node burger.js
 
 ![Eat-Da-Burger](/public/assets/images/README.PNG)
 
-[Heroku Deployment](https://github.com/ncrutgers/eat-da-burger)
+[Heroku Deployment](https://gentle-harbor-02276.herokuapp.com)
 
 [GitHub Repository](https://github.com/ncrutgers/eat-da-burger)
